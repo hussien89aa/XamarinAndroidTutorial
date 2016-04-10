@@ -6,9 +6,10 @@
     <!-- Inherit from the light Material Theme -->
     <style name="MyCustomTheme" parent="android:Theme.Material.Light">
         <!-- Override the app bar color -->
-        <item name="android:colorPrimary">@color/my_blue</item>
+        <item name="android:colorPrimary">@color/green</item>
         <!-- Override the color of UI controls -->
-        <item name="android:colorAccent">@color/my_purple</item>
+        <item name="android:colorAccent">@color/white</item>
+           <item name="android:statusBarColor">@color/orange</item>
     </style>
 </resources>
 
