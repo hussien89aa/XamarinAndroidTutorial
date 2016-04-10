@@ -16,14 +16,15 @@ showAsAction=“never”
 
 
 
-// call in code
+// create menu
 
-public override bool OnPrepareOptionsMenu(IMenu menu)
-{
-    MenuInflater.Inflate(Resource.Menu.mymenu, menu);
-    return base.OnPrepareOptionsMenu(menu);
-}
+public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.main_menu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
 
+//select from menu
 public override bool OnOptionsItemSelected(IMenuItem item)
 {
     switch (item.ItemId)
