@@ -1,0 +1,26 @@
+
+//styles.xml  file
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <!-- Inherit from the light Material Theme -->
+    <style name="MyCustomTheme" parent="android:Theme.Material.Light">
+        <!-- Override the app bar color -->
+        <item name="android:colorPrimary">@color/my_blue</item>
+        <!-- Override the color of UI controls -->
+        <item name="android:colorAccent">@color/my_purple</item>
+    </style>
+</resources>
+
+
+// in Mainfest file
+<application android:label="MyApp"
+    android:theme="@style/MyCustomTheme">
+</application>
+
+// in activity
+[Activity(Label = "MyActivity", Theme = "@style/MyCustomTheme")]
+
+
+//link
+//https://developer.xamarin.com/guides/android/user_interface/material_theme/
