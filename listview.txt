@@ -1,0 +1,127 @@
+//view ticket
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whilebackground"
+    android:padding="8dp">
+    <LinearLayout
+        android:id="@+id/Text"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip">
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF7F3300"
+            android:textSize="20dip"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dip"
+            android:textColor="#FF267F00"
+            android:paddingLeft="100dip" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="5dp"
+        android:src="@drawable/icon"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
+
+//list view
+  <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView1" />
+
+// class view
+
+        public class TableItem
+        {
+            public string Heading;
+            public string SubHeading;
+            public int ImageResourceId;
+            public TableItem(string Heading, string SubHeading, int ImageResourceId)
+            {
+                this.Heading = Heading;
+                this.SubHeading = SubHeading;
+                this.ImageResourceId = ImageResourceId;
+            }
+        }
+
+// full class
+List<TableItem> tableItems=new List<TableItem>();
+            tableItems.Add(new TableItem("hussein", "devepoer", Resource.Drawable.Icon));
+            tableItems.Add(new TableItem("ahmed", "admin", Resource.Drawable.Icon));
+            tableItems.Add(new TableItem("jasim", " manager", Resource.Drawable.Icon));
+
+
+// adpater manage
+ public class HomeScreenAdapter : BaseAdapter<TableItem>
+        {
+            List<TableItem> items;
+            Activity context;
+            public HomeScreenAdapter(Activity context, List<TableItem> items)
+                : base()
+            {
+                this.context = context;
+                this.items = items;
+            }
+            public override long GetItemId(int position)
+            {
+                return position;
+            }
+            public override TableItem this[int position]
+            {
+                get { return items[position]; }
+            }
+            public override int Count
+            {
+                get { return items.Count; }
+            }
+            public override View GetView(int position, View convertView, ViewGroup parent)
+            {
+                var item = items[position];
+                View view = convertView;
+                if (view == null) // no view to re-use, create new
+                    view = context.LayoutInflater.Inflate(Resource.Layout.CustomView, null);
+                view.FindViewById<TextView>(Resource.Id.Text1).Text = item.Heading;
+                view.FindViewById<TextView>(Resource.Id.Text2).Text = item.SubHeading;
+                view.FindViewById<ImageView>(Resource.Id.Image).SetImageResource(item.ImageResourceId);
+                return view;
+            }
+        }
+
+
+// full list view
+ protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+
+            // Get our button from the layout resource,
+            // and attach an event to it
+            ListView listView = FindViewById<ListView>(Resource.Id.listView1); 
+            listView.Adapter = new HomeScreenAdapter(this, tableItems);
+            listView.ItemClick += OnListItemClick;  // to be defined
+
+        }
+
+// get item slected
+        void OnListItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            var listView = sender as ListView;
+            var t = tableItems[e.Position];
+            Android.Widget.Toast.MakeText(this, t.Heading, Android.Widget.ToastLength.Short).Show();
+        }
