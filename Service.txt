@@ -1,0 +1,44 @@
+
+1-- define service
+ [Service]
+   
+    public class DemoIntentService : IntentService
+    {
+        public DemoIntentService() : base("DemoIntentService")
+        {
+        }
+
+        protected override void OnHandleIntent(Android.Content.Intent intent)
+        {
+
+        }
+        public override StartCommandResult OnStartCommand(Intent intent, StartCommandFlags flags, int startId)
+        {
+            // start a task here
+            new Task(() =>
+            {
+                // long running code
+                while (true)
+                {  
+                Intent intents = new Intent();
+                    intents.SetAction("com.alr.text");
+                    intents.PutExtra("MyData", "Data from Activity1");
+                SendBroadcast(intents);
+           
+                    System.Threading.Thread.Sleep(1000);
+                }
+            }).Start();
+            return StartCommandResult.Sticky;
+        }
+
+    }
+
+2-- start service
+ this.StartService(new Intent(this, typeof(DemoIntentService)));
+
+
+3-- register service if needed
+  <service
+        android:name=".DemoIntentService"
+        android:exported="false" >
+  </service>
