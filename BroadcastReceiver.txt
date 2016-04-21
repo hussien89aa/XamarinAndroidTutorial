@@ -1,0 +1,65 @@
+//1- BroadcastReceiver Class
+   
+[BroadcastReceiver(Exported = true, Label = "SMS Receiver")]
+    [IntentFilter(new string[] { "android.provider.Telephony.SMS_RECEIVED","com.alr.text" })]
+    public class SMSReceiver : Android.Content.BroadcastReceiver
+    {
+        private const string Tag = "SMSBroadcastReceiver";
+        private const string IntentAction = "android.provider.Telephony.SMS_RECEIVED";
+
+        public override void OnReceive(Context context, Intent intent)
+        {
+            // Log.Info(Tag, "Intent received: " + intent.Action);
+            // read the SendBroadcast data
+            if (intent.Action == "com.alr.text")
+            {
+                string text = intent.GetStringExtra("MyData") ?? "Data not available";
+                Toast.MakeText(context, text, ToastLength.Short).Show();
+            }
+            //read incomming sms
+            if (intent.Action == IntentAction)
+            {
+
+                SmsMessage[] messages = Telephony.Sms.Intents.GetMessagesFromIntent(intent);
+
+                var sb = new StringBuilder();
+
+                for (var i = 0; i < messages.Length; i++)
+                {
+
+                    sb.Append(string.Format("SMS From: {0}{1}Body: {2}{1}", messages[i].OriginatingAddress,
+                        System.Environment.NewLine, messages[i].MessageBody));
+                }
+                Toast.MakeText(context, sb.ToString(), ToastLength.Short).Show();
+            }
+        }
+    }
+
+
+2- Register class in mainfest or by code
+
+A- From MAinfest
+ <uses-permission android:name="android.permission.BROADCAST_SMS" />
+  <uses-permission android:name="android.permission.READ_SMS" />
+  <uses-permission android:name="android.permission.RECEIVE_SMS" />
+  <uses-permission android:name="android.permission.SEND_SMS" />
+  <receiver android:name=".SMSReceiver" >
+    <intent-filter android:priority="2147483647">
+      <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+      <action android:name="com.alr.text" />
+
+      <category android:name="android.intent.category.DEFAULT" />
+    </intent-filter>
+  </receiver>
+B- By code
+   SMSReceiver smsReceiver = new SMSReceiver();
+           RegisterReceiver(smsReceiver, new IntentFilter("android.provider.Telephony.SMS_RECEIVED"));
+
+//3-  send  user SendBroadcast
+  Intent intent = new Intent();
+                intent.SetAction ("com.alr.text");
+                intent.PutExtra("MyData", "Data from Activity1");
+                SendBroadcast(  intent);
+
+// end  SendBroadcast
+UnregisterReceiver(smsReceiver);
