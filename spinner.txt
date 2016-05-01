@@ -1,0 +1,31 @@
+       <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1" />
+//Define Spinner
+Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner1);
+// dfeine data set
+List<string> scaleNames = new List<string>();
+scaleNames.Add("Developer");
+            scaleNames.Add("Admins");
+            scaleNames.Add("Desginner");
+            //asgin dataset
+            var scaleAdapter = new ArrayAdapter<string>(
+                this, Android.Resource.Layout.SimpleSpinnerItem, scaleNames);
+
+scaleAdapter.SetDropDownViewResource
+                (Android.Resource.Layout.SimpleSpinnerDropDownItem);
+
+            spinner.Adapter = scaleAdapter;
+            // button click evnet
+            spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+
+        }
+        //spinner click
+        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+{
+    Spinner spinner = (Spinner)sender;
+
+    string toast = string.Format("The planet is {0}", spinner.GetItemAtPosition(e.Position));
+    Toast.MakeText(this, toast, ToastLength.Long).Show();
+}
