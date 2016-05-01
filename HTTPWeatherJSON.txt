@@ -1,0 +1,89 @@
+//This code for rEad sunset time for any city you enter
+
+//Add refresne
+1- Add System.Json
+2- Add internet access
+
+// interface
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:hint="City Name" />
+    <Button
+        android:id="@+id/getWeatherButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Get Sunset Time" />
+    <TextView
+        android:text="_______________"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+</LinearLayout>
+
+// 
+//source code
+      protected  override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+
+            // Get our button from the layout resource,
+            // and attach an event to it
+            //button.Click += async (sender, e) => { }
+            Button button = FindViewById<Button>(Resource.Id.getWeatherButton);
+            var editText1 = FindViewById<EditText>(Resource.Id.editText1);
+            var textView1 = FindViewById<TextView>(Resource.Id.textView1);
+
+            // When the user clicks the button, send the REST request to geonames.org,
+            button.Click += async (sender, e) =>
+            {
+                button.Enabled = false;
+                 string url = "https://query.yahooapis.com/v1/public/yql?q=select%20astronomy.sunset%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22"+ editText1 .Text +"%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
+
+                JsonValue json = await FetchWeatherAsync(url);
+              //  JsonValue weatherResults = json["query"]["results"];
+                string weatherResults = json["query"]["results"]["channel"]["astronomy"]["sunset"].ToString();
+                textView1.Text = weatherResults;
+                button.Enabled = true;
+            };
+        }
+        private async Task<JsonValue> FetchWeatherAsync(string url)
+        {
+            // Create an HTTP web request using the URL:
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new Uri(url));
+            request.ContentType = "application/json";
+            request.Method = "GET";
+
+            // Send the request to the server and wait for the response:
+            using (WebResponse response = await request.GetResponseAsync())
+            {
+                // Get a stream representation of the HTTP web response:
+                using (Stream stream = response.GetResponseStream())
+                {
+                    // Use this stream to build a JSON document object:
+                    JsonValue jsonDoc = await Task.Run(() => JsonObject.Load(stream));
+                    Console.Out.WriteLine("Response: {0}", jsonDoc.ToString());
+
+                    // Return the JSON document:
+                    return jsonDoc;
+                }
+            }
+        }
+
+
+//Ref
+https://developer.yahoo.com/weather/

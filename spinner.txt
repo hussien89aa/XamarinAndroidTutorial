@@ -20,7 +20,7 @@ scaleAdapter.SetDropDownViewResource
             // button click evnet
             spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
 
-        }
+ 
         //spinner click
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
 {
