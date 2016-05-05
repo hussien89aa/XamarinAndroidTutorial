@@ -1,0 +1,186 @@
+// add sqlite.net componenet 
+//ui
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFullName"
+        android:hint="full name" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etid"
+        android:hint="id" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:id="@+id/buAdd"
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buDelete" />
+        <Button
+            android:text="Update"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buUpdate" />
+        <Button
+            android:text="Select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buSelect" />
+    </LinearLayout>
+    <TextView
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvViewText" />
+</LinearLayout>
+
+// SQL class
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using SQLite;
+using System.IO;
+ 
+
+
+namespace AndroidSQLite
+{
+    class SqliteDB
+    {
+        //database path
+        string dbPath = Path.Combine(
+ System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal),
+          "Departments.db3");
+
+        public SqliteDB()
+        {
+            //Creating database, if it doesn't already exist 
+            if (!File.Exists(dbPath))
+            {  
+            var db = new SQLiteConnection(dbPath);
+            db.CreateTable<Departments>();
+             }
+            //if (db.Table<Departments>().Count() == 0)
+        }
+
+        public void Insert(string FullNamee)
+          {
+                 var db = new SQLiteConnection(dbPath);
+                 var newDepartments = new Departments();
+                 newDepartments.FullName = FullNamee;
+                 db.Insert(newDepartments);
+            }
+        public void update(string FullNamee,int id)
+        {
+            var db = new SQLiteConnection(dbPath);
+            var newDepartments = new Departments();
+            newDepartments.FullName = FullNamee;
+            newDepartments.Id = id;
+            db.Update(newDepartments);
+        }
+        public void delete( int id)
+        {
+            var db = new SQLiteConnection(dbPath);
+            var newDepartments = new Departments();
+            newDepartments.Id = id;
+            db.Delete(newDepartments);
+           // db.Execute(""); 
+        }
+
+        public string select(string FullName)
+        {
+            string data = "";
+            var db = new SQLiteConnection(dbPath);
+           
+            var DepartmentssStartingWithA = db.Query<Departments>("SELECT * FROM Departments WHERE FullName = ?", FullName);
+            foreach (var s in DepartmentssStartingWithA)
+            {
+                data += s.Id + " " + s.FullName + "\n";
+            }
+            return data;
+        }
+     
+           public string SelectAll()
+        {
+            string data = "";
+            var db = new SQLiteConnection(dbPath);
+            Console.WriteLine("Reading data From Table");
+            var table = db.Table<Departments>();
+            foreach (var s in table)
+            {
+                data+=s.Id + " " + s.FullName +"\n" ;
+            }
+            return data;
+        }
+
+        [Table("Departments")]
+        public class Departments
+        {
+            [PrimaryKey, AutoIncrement, Column("_id")]
+            public int Id { get; set; }
+            [MaxLength(8)]
+            public string FullName { get; set; }
+        }
+
+    }
+
+
+}
+// load data
+    protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+
+            var textView1 = FindViewById<TextView>(Resource.Id.tvViewText);
+            var etname = FindViewById<EditText>(Resource.Id.etFullName);
+            var etid = FindViewById<EditText>(Resource.Id.etid);
+
+            SqliteDB sq = new SqliteDB();
+            Button button = FindViewById<Button>(Resource.Id.buAdd);
+             button.Click += delegate {
+            
+                sq.Insert(etname.Text);
+             textView1.Text=   sq.SelectAll();
+            };
+            Button buDelete = FindViewById<Button>(Resource.Id.buDelete);
+            buDelete.Click += delegate {
+                sq.delete(Convert.ToInt32(etid.Text));
+                textView1.Text = sq.SelectAll();
+            };
+            Button buUpdate = FindViewById<Button>(Resource.Id.buUpdate);
+            buUpdate.Click += delegate {
+                sq.update(etname.Text, Convert.ToInt32(etid.Text));
+                textView1.Text = sq.SelectAll();
+            };
+            Button buSelect = FindViewById<Button>(Resource.Id.buSelect);
+            buSelect.Click += delegate {
+                textView1.Text = sq.select(etname.Text);
+            };
+
+        }
