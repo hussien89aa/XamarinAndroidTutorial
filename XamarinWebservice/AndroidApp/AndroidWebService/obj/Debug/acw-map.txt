@@ -1,0 +1,8 @@
+AndroidWebService.MainActivity, AndroidWebService;md5016092229544761dfb6ce816cd4cf7b7.MainActivity
+AndroidWebService.MainActivity, AndroidWebService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5016092229544761dfb6ce816cd4cf7b7.MainActivity
+AndroidWebService.MainActivity;md5016092229544761dfb6ce816cd4cf7b7.MainActivity
+androidwebservice.MainActivity;md5016092229544761dfb6ce816cd4cf7b7.MainActivity
+AndroidWebService.Register, AndroidWebService;md5016092229544761dfb6ce816cd4cf7b7.Register
+AndroidWebService.Register, AndroidWebService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5016092229544761dfb6ce816cd4cf7b7.Register
+AndroidWebService.Register;md5016092229544761dfb6ce816cd4cf7b7.Register
+androidwebservice.Register;md5016092229544761dfb6ce816cd4cf7b7.Register

@@ -1,0 +1,99 @@
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\ApplicationInsights.config
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\csc.exe
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\vbc.exe
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\SellingPartal.dll.config
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\SellingPartal.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\SellingPartal.pdb
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.AI.Web.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.AI.Web.xml
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\obj\Debug\SellingPartal.dll
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\obj\Debug\SellingPartal.pdb
+C:\Users\ASUS S550C\Source\Workspaces\sellingapp\SellingPartal\SellingPartal\obj\Debug\SellingPartal.csprojResolveAssemblyReference.cache
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\ApplicationInsights.config
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\csc.exe
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\System.Collections.Immutable.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\System.Reflection.Metadata.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\vbc.exe
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\VBCSCompiler.exe
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\roslyn\VBCSCompiler.exe.config
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\SellingPartal.dll.config
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\SellingPartal.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\SellingPartal.pdb
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.AI.DependencyCollector.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.AI.Web.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.AI.WindowsServer.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.ApplicationInsights.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.AI.DependencyCollector.xml
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.AI.Web.xml
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.AI.WindowsServer.xml
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.ApplicationInsights.xml
+D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\E\new page\online selling app\SellingPartal\SellingPartal\obj\Debug\SellingPartal.csprojResolveAssemblyReference.cache
+D:\E\new page\online selling app\SellingPartal\SellingPartal\obj\Debug\SellingPartal.dll
+D:\E\new page\online selling app\SellingPartal\SellingPartal\obj\Debug\SellingPartal.pdb
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\ApplicationInsights.config
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\csc.exe
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\System.Collections.Immutable.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\System.Reflection.Metadata.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\vbc.exe
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\VBCSCompiler.exe
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\VBCSCompiler.exe.config
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\SellingPartal.dll.config
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\SellingPartal.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\SellingPartal.pdb
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.DependencyCollector.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.Web.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.WindowsServer.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.ApplicationInsights.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.DependencyCollector.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.Web.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.WindowsServer.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.ApplicationInsights.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\obj\Debug\SellingPartal.csprojResolveAssemblyReference.cache
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\obj\Debug\SellingPartal.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\obj\Debug\SellingPartal.pdb
