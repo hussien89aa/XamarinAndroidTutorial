@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="BroadcastAService.BroadcastAService" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="16" />
+	<application android:label="BroadcastAService"></application>
+	<uses-permission android:name="android.permission.BROADCAST_SMS" />
+	<uses-permission android:name="android.permission.READ_SMS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<receiver android:name=".MyReciver">
+		<intent-filter android:priority="2147483647">
+			<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+			<action android:name="com.alr.text" />
+			<category android:name="android.intent.category.DEFAULT" />
+		</intent-filter>
+	</receiver>
+</manifest>
