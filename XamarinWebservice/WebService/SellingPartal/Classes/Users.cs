@@ -46,40 +46,6 @@ namespace SellingPartal
             return UserID;
         }
 
-
-        public String GetLastToolAdded(string UserID, string DataAdded)
-        {
-            String ToolID = "0";
-            try
-            {
-                SqlDataReader reader;
-                using (SqlConnection connection = new SqlConnection(DBConnection.ConnectionString))
-                {
-                    SqlCommand cmd = new SqlCommand("SELECT ToolID FROM Tools where UserID=@UserID and DateAdd=@DataAdded ");
-                    cmd.CommandType = CommandType.Text;
-                    cmd.Connection = connection;
-                    cmd.Parameters.AddWithValue("@UserID", UserID);
-                    cmd.Parameters.AddWithValue("@DataAdded", DataAdded);
-                    connection.Open();
-
-                    reader = cmd.ExecuteReader();
-                    
-                    while (reader.Read())
-                    {
-                        ToolID =Convert.ToString( reader.GetInt64(0));
-
-                    }
-                    reader.Close();
-                    connection.Close();
-                }
-
-            }
-            catch (Exception ex)
-            {
-
-            }
-
-            return ToolID;
-        }
+      
     }
 }
