@@ -1,35 +1,121 @@
-  //simple
-  //simple
-             Toast.MakeText(this,"hi",  ToastLength.Short).Show();
-            //complex
-            Toast t = new Toast(this);
-           View view = LayoutInflater.Inflate(Resource.Layout.ticket_news, null);
-            TextView tv = view.FindViewById<TextView>(Resource.Id.Text1);
-            tv.Text = "hi";
-            t.View = view;
-            t.Duration = ToastLength.Short;
-            t.Show();
+ //permission need
+ 	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-/// view
-
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	//layout degin
+	<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/whilebackground"
-    android:padding="8dp">
-    <LinearLayout
-        android:id="@+id/Text"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+    <SeekBar
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dip">
-        <TextView
-            android:id="@+id/Text1"
+        android:id="@+id/seekBar1" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:id="@+id/bustart"
+            android:text="Start"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#FF7F3300"
-            android:textSize="20dip"
-            android:textStyle="italic" /> 
-    </LinearLayout> 
-</RelativeLayout>
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buStop" />
+        <Button
+            android:text="Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buPause" />
+    </LinearLayout>
+</LinearLayout>
+
+//code need
+using System;
+using Android.App;
+using Android.Content;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Android.OS;
+using Android.Media;
+
+namespace Android_Media
+{
+    [Activity(Label = "Android_Media", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : Activity
+    {
+        //define timer
+        System.Timers.Timer t;
+//define seek bar
+        SeekBar seekBar1;
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+            //set timer 
+           
+            t = new System.Timers.Timer();
+            t.Interval = 3000;
+            t.Elapsed += new System.Timers.ElapsedEventHandler(t_Elapsed);
+            seekBar1 = FindViewById<SeekBar>(Resource.Id.seekBar1);
+
+            //prepar audio
+            string filePath = "http://server6.mp3quran.net/thubti/001.mp3";
+            PreparePlayer(filePath);
+
+            //start
+            Button button = FindViewById<Button>(Resource.Id.bustart);
+            button.Click += delegate {
+                player.Start();
+                t.Start();
+            };
+            //stop
+            Button buStop = FindViewById<Button>(Resource.Id.buStop);
+            buStop.Click += delegate {
+                 player.Stop();
+                t.Stop();
+              PreparePlayer(filePath);
+            };
+            //pause
+            Button buPause = FindViewById<Button>(Resource.Id.buPause);
+            buPause.Click += delegate {
+                 player.Pause();
+                t.Stop();
+            };
+
+
+
+        }
+
+
+
+        protected MediaPlayer player;
+        public void PreparePlayer(String filePath)
+        {
+            if (player == null)
+            {
+                player = new MediaPlayer();
+            }
+            player.Reset();
+            player.SetDataSource(filePath);
+            player.Prepare();
+            seekBar1.Max = player.Duration;
+
+
+        }
+
+        protected void t_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            seekBar1.Progress =player.CurrentPosition ;
+        }
+    }
+}
+
