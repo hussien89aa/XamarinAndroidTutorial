@@ -76,10 +76,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/17/2015 09:55:34</publishTime>
     </File>
     <File Include="bin/SellingPartal.dll">
-      <publishTime>05/06/2016 20:00:49</publishTime>
+      <publishTime>05/13/2016 00:53:43</publishTime>
     </File>
     <File Include="Classes/ClassDiagram1.cd">
-      <publishTime>12/20/2015 19:45:07</publishTime>
+      <publishTime>05/06/2016 22:22:34</publishTime>
     </File>
     <File Include="index.aspx">
       <publishTime>12/23/2015 02:02:36</publishTime>
@@ -100,7 +100,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/17/2015 09:57:15</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/06/2016 20:00:49</publishTime>
+      <publishTime>05/13/2016 00:53:45</publishTime>
     </File>
     <File Include="WebServiceDB.asmx">
       <publishTime>05/06/2016 19:48:21</publishTime>

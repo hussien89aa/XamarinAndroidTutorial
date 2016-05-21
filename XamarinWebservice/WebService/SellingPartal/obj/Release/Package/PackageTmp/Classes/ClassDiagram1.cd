@@ -1,52 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
   <Class Name="SellingPartal.DBConnection">
-    <Position X="3.5" Y="1.25" Width="1.5" />
+    <Position X="3.25" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Classes\DBConnection.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SellingPartal.Users">
-    <Position X="1.25" Y="1" Width="1.5" />
+    <Position X="0.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>Classes\Users.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SellingPartal.ToolListing">
-    <Position X="4.5" Y="3" Width="1.5" />
+  <Class Name="SellingPartal.Classes.ReturnData">
+    <Position X="6.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAAEAAAgAAAAAAAAgAAAAAAAAAAAAAAAAEQAAA=</HashCode>
-      <FileName>Classes\ToolListing.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Classes\ReturnData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SellingPartal.Classes.ImageResult">
-    <Position X="5.5" Y="1.25" Width="1.5" />
+  <Class Name="SellingPartal.WebServiceDB">
+    <Position X="7.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAA=</HashCode>
-      <FileName>Classes\ImageResult.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SellingPartal.Classes.StringGeneration">
-    <Position X="8" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\StringGeneration.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SellingPartal.Classes.ToolType">
-    <Position X="8.25" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
-      <FileName>Classes\ToolType.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SellingPartal.ToolListingDescription">
-    <Position X="1" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAQAAAAAAQQAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
-      <FileName>Classes\ToolListingDescription.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>WebServiceDB.asmx.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

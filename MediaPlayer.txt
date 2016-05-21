@@ -1,0 +1,35 @@
+  //simple
+  //simple
+             Toast.MakeText(this,"hi",  ToastLength.Short).Show();
+            //complex
+            Toast t = new Toast(this);
+           View view = LayoutInflater.Inflate(Resource.Layout.ticket_news, null);
+            TextView tv = view.FindViewById<TextView>(Resource.Id.Text1);
+            tv.Text = "hi";
+            t.View = view;
+            t.Duration = ToastLength.Short;
+            t.Show();
+
+/// view
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whilebackground"
+    android:padding="8dp">
+    <LinearLayout
+        android:id="@+id/Text"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip">
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF7F3300"
+            android:textSize="20dip"
+            android:textStyle="italic" /> 
+    </LinearLayout> 
+</RelativeLayout>

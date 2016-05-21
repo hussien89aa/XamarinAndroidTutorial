@@ -64,3 +64,36 @@ D:\E\new page\online selling app\SellingPartal\SellingPartal\bin\Microsoft.CodeD
 D:\E\new page\online selling app\SellingPartal\SellingPartal\obj\Release\SellingPartal.csprojResolveAssemblyReference.cache
 D:\E\new page\online selling app\SellingPartal\SellingPartal\obj\Release\SellingPartal.dll
 D:\E\new page\online selling app\SellingPartal\SellingPartal\obj\Release\SellingPartal.pdb
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\ApplicationInsights.config
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\csc.exe
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\System.Collections.Immutable.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\System.Reflection.Metadata.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\vbc.exe
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\VBCSCompiler.exe
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\roslyn\VBCSCompiler.exe.config
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\SellingPartal.dll.config
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\SellingPartal.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\SellingPartal.pdb
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.DependencyCollector.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.Web.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.WindowsServer.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.ApplicationInsights.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.DependencyCollector.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.Web.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.AI.WindowsServer.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.ApplicationInsights.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\obj\Release\SellingPartal.csprojResolveAssemblyReference.cache
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\obj\Release\SellingPartal.dll
+D:\xamarin\XamarinGit\XamarinWebservice\WebService\SellingPartal\obj\Release\SellingPartal.pdb

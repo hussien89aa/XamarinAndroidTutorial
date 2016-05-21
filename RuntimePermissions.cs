@@ -1,14 +1,5 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-using System.Threading.Tasks;
-using Android;
-using Android.Telephony;
-using Android.Content.PM;
+﻿ // add  send sms in maifest
+
 
 namespace AndroidPermissions
 {
