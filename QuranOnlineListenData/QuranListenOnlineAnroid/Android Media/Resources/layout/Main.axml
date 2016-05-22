@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:id="@+id/bustart"
+            android:text="Start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buStop" />
+        <Button
+            android:text="Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buPause" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\assemblies\Android Media.dll
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\assemblies\mscorlib.dll
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\assemblies\System.Core.dll
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\assemblies\System.dll
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\assemblies\System.Xml.dll
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\assemblies\System.Xml.Linq.dll
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\assemblies\System.Runtime.Serialization.dll
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\assemblies\System.ServiceModel.Internals.dll

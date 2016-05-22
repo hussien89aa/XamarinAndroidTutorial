@@ -1,0 +1,20 @@
+Android_Media.AyA, Android Media;md5825a2e0dcd7fe6880cf64661c7aabd9e.AyA
+Android_Media.AyA, Android Media, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5825a2e0dcd7fe6880cf64661c7aabd9e.AyA
+Android_Media.AyA;md5825a2e0dcd7fe6880cf64661c7aabd9e.AyA
+android_media.AyA;md5825a2e0dcd7fe6880cf64661c7aabd9e.AyA
+Android_Media.AyA/HomeScreenAdapter, Android Media;md5825a2e0dcd7fe6880cf64661c7aabd9e.AyA_HomeScreenAdapter
+Android_Media.AyA+HomeScreenAdapter, Android Media, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5825a2e0dcd7fe6880cf64661c7aabd9e.AyA_HomeScreenAdapter
+Android_Media.AyA.HomeScreenAdapter;md5825a2e0dcd7fe6880cf64661c7aabd9e.AyA_HomeScreenAdapter
+android_media.AyA_HomeScreenAdapter;md5825a2e0dcd7fe6880cf64661c7aabd9e.AyA_HomeScreenAdapter
+Android_Media.Recites, Android Media;md5825a2e0dcd7fe6880cf64661c7aabd9e.Recites
+Android_Media.Recites, Android Media, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5825a2e0dcd7fe6880cf64661c7aabd9e.Recites
+Android_Media.Recites;md5825a2e0dcd7fe6880cf64661c7aabd9e.Recites
+android_media.Recites;md5825a2e0dcd7fe6880cf64661c7aabd9e.Recites
+Android_Media.Recites/HomeScreenAdapter, Android Media;md5825a2e0dcd7fe6880cf64661c7aabd9e.Recites_HomeScreenAdapter
+Android_Media.Recites+HomeScreenAdapter, Android Media, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5825a2e0dcd7fe6880cf64661c7aabd9e.Recites_HomeScreenAdapter
+Android_Media.Recites.HomeScreenAdapter;md5825a2e0dcd7fe6880cf64661c7aabd9e.Recites_HomeScreenAdapter
+android_media.Recites_HomeScreenAdapter;md5825a2e0dcd7fe6880cf64661c7aabd9e.Recites_HomeScreenAdapter
+Android_Media.MainActivity, Android Media;md5825a2e0dcd7fe6880cf64661c7aabd9e.MainActivity
+Android_Media.MainActivity, Android Media, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5825a2e0dcd7fe6880cf64661c7aabd9e.MainActivity
+Android_Media.MainActivity;md5825a2e0dcd7fe6880cf64661c7aabd9e.MainActivity
+android_media.MainActivity;md5825a2e0dcd7fe6880cf64661c7aabd9e.MainActivity

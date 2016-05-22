@@ -1,0 +1,19 @@
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\bin\Debug\Android Media.dll
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\bin\Debug\Android Media.pdb
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\bin\Debug\Android_Media.Android_Media.apk
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\bin\Debug\Android_Media.Android_Media-Signed.apk
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\Android Media.csprojResolveAssemblyReference.cache
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\Android Media.dll
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\Android Media.pdb
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\android\bin\Android_Media.Android_Media.apk
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\res\layout\main.xml
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\res\values\strings.xml
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\res\drawable\icon.png
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\R.cs.flag
+c:\users\asus s550c\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\uploadflags.txt
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\res\layout\customview.xml
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\res\drawable\whilebackground.xml
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\res\drawable\quran.png
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\res\layout\recities.xml
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\obj\Debug\Android Media.dll.mdb
+C:\Users\ASUS S550C\documents\visual studio 2015\Projects\Android Media\Android Media\bin\Debug\Android Media.dll.mdb
