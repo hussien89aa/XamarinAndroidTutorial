@@ -1,0 +1,43 @@
+
+//permissions need
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+
+//code
+        void FillContacts()
+        {
+            var uri = ContactsContract.Contacts.ContentUri;
+            string[] projection = {
+       ContactsContract.Contacts.InterfaceConsts.Id,
+       ContactsContract.Contacts.InterfaceConsts.DisplayName,
+       ContactsContract.Contacts.InterfaceConsts.PhotoId
+  };
+            // CursorLoader introduced in Honeycomb (3.0, API11)
+            var loader = new CursorLoader(this, uri, projection, null, null, null);
+            var cursor = (ICursor)loader.LoadInBackground();
+            List<Contact> contactList = new List<Contact>();
+            if (cursor.MoveToFirst())
+            {
+                do
+                {
+                    contactList.Add(
+                    new Contact( cursor.GetLong(cursor.GetColumnIndex(projection[0])),
+                         cursor.GetString(cursor.GetColumnIndex(projection[1])),
+                       cursor.GetString(cursor.GetColumnIndex(projection[2]))
+                   )
+                   );
+                } while (cursor.MoveToNext());
+            }
+
+        }
+
+        class Contact
+        {    long Id;
+            string DisplayName;
+            string PhotoId;
+           public  Contact(long Id, string DisplayName,string PhotoId)
+            {
+                this.Id = Id;
+                this.DisplayName = DisplayName;
+                this.PhotoId = PhotoId;
+            }
+        }
