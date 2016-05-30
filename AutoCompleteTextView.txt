@@ -1,0 +1,30 @@
+ //ticket load
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:textSize="16sp"
+    android:textColor="#000" />
+
+
+// layout items
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Products" />
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete_product"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp" />
+
+//code need
+
+            AutoCompleteTextView textView = FindViewById<AutoCompleteTextView>(Resource.Id.autocomplete_product);
+              string[] Products = new string[] {
+              "iphone 6s", "ipad", "ipad pro",
+             "iphone 5", "Samsung", "Song" };
+            var adapter = new ArrayAdapter<String>(this, Resource.Layout.ticket_items, Products);
+
+             textView.Adapter = adapter;
