@@ -1,0 +1,55 @@
+//ui
+   <TextView
+        android:id="@+id/accelerometer_text"
+        android:layout_width="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_height="wrap_content"
+        android:text="TEXT"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp" />
+
+//code
+
+     public class MainActivity : Activity, ISensorEventListener
+    {
+        static readonly object _syncLock = new object();
+        SensorManager _sensorManager;
+        TextView _sensorTextView;
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+
+            _sensorManager = (SensorManager)GetSystemService(Context.SensorService);
+            _sensorTextView = FindViewById<TextView>(Resource.Id.accelerometer_text);
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+            _sensorManager.RegisterListener(this,
+                                            _sensorManager.GetDefaultSensor(SensorType.Accelerometer),
+                                            SensorDelay.Ui);
+        }
+        protected override void OnPause()
+        {
+            base.OnPause();
+            _sensorManager.UnregisterListener(this);
+        }
+        public void OnAccuracyChanged(Sensor sensor, SensorStatus accuracy)
+        {
+            // We don't want to do anything here.
+        }
+
+        public void OnSensorChanged(SensorEvent e)
+        {
+            lock (_syncLock)
+            {
+                _sensorTextView.Text = string.Format("x={0:f}, y={1:f}, y={2:f}", e.Values[0], e.Values[1], e.Values[2]);
+            }
+        }
+
+    }
