@@ -1,3 +1,5 @@
+//permission
+	<uses-permission android:name="android.permission.VIBRATE" />
 //ui
    <TextView
         android:id="@+id/accelerometer_text"
@@ -11,11 +13,17 @@
 
 //code
 
-     public class MainActivity : Activity, ISensorEventListener
+      [Activity(Label = "Sensors", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = ScreenOrientation.Portrait)]
+    public class MainActivity : Activity, ISensorEventListener
     {
         static readonly object _syncLock = new object();
         SensorManager _sensorManager;
         TextView _sensorTextView;
+        float last_x=0;
+        float last_y=0;
+        float last_z=0;
+        long last_Time=0;
+        float ThreadShould = 3000; //mini speed
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -48,7 +56,26 @@
         {
             lock (_syncLock)
             {
-                _sensorTextView.Text = string.Format("x={0:f}, y={1:f}, y={2:f}", e.Values[0], e.Values[1], e.Values[2]);
+                float  x= e.Values[0];
+                float  y= e.Values[1];
+                float  z= e.Values[2];
+                long  Current_Time= DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond; ;
+                if((Current_Time-last_Time)>100)
+                {
+                    long different = Current_Time - last_Time;
+                    last_Time = Current_Time;
+                    float speed = Math.Abs((x + y + z) - (last_x + last_y + last_z)) / different * 10000;
+                    if (speed > ThreadShould)
+                    {
+                        _sensorTextView.Text = string.Format("newShouck={0:f}",speed);
+                        Vibrator vibrator = (Vibrator) GetSystemService(Context.VibratorService);
+                        vibrator.Vibrate(100);
+                    }
+                    last_x = x;
+                    last_y = y;
+                    last_z = z;
+                }
+               
             }
         }
 
