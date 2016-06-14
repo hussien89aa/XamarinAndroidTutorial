@@ -1,0 +1,28 @@
+//1- add google play service-ads 
+
+//2- update the manifest.xml
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+//3- in manifest.xml application tage add these lines
+	<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
+	
+//4- layout 
+xmlns:ads="http://schemas.android.com/apk/res-auto"
+	 <com.google.android.gms.ads.AdView
+            android:id="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adUnitId="@string/Banner_Ads"
+            ads:adSize="BANNER"
+           />
+       
+ 
+    
+ //Banner Ads 
+          AdView  mAdView = FindViewById<AdView>(Resource.Id.adView1);
+            var adRequest = new AdRequest.Builder().Build();
+            // Start loading the ad.
+            mAdView.LoadAd(adRequest);
+//5- update string.xml file
+<string name="Banner_Ads">ADD_ID</string>
